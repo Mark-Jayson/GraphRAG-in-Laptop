@@ -1,0 +1,16 @@
+{
+  "benchmark": "2wikimultihop",
+  "tag": "vector",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 54957,
+  "ner_model": null,
+  "retriever": "dense_passage_bruteforce_cosine",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 20,
+  "git_hash": "ed88706",
+  "num_queries": 500,
+  "wall_time_s": 7186.0,
+  "run_date": "2026-08-12"
+}

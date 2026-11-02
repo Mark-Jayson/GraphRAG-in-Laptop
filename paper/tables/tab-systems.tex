@@ -1,0 +1,27 @@
+\begin{tabular}{lrrr}
+\toprule
+Benchmark & passages & index time & peak footprint \\
+\midrule
+HotpotQA & 66,581 & 97.7 min & 13.82 GB \\
+2WikiMultiHopQA & 54,957 & 73.4 min & not measured \\
+MuSiQue$\ddagger$ & 21,100 & 29.7 min & not measured \\
+\bottomrule
+\end{tabular}
+
+% query latency
+
+\begin{tabular}{llrrrr}
+\toprule
+Benchmark & tag & total med (p95) & generation & refusal & gen share \\
+\midrule
+HotpotQA & vector & 18.3 (26.0) & 18.2 & 19.6\% & 99.6\% \\
+HotpotQA & base & 26.0 (38.9) & 24.3 & 26.4\% & 93.4\% \\
+HotpotQA & full & 24.9 (29.0) & 22.6 & 26.0\% & 90.8\% \\
+2WikiMultiHopQA & vector & 13.1 (24.9) & 13.0 & 48.6\% & 99.6\% \\
+2WikiMultiHopQA & base & 34.6 (58.6) & 32.5 & 46.0\% & 94.0\% \\
+2WikiMultiHopQA & full & 25.3 (28.1) & 23.4 & 45.6\% & 92.4\% \\
+MuSiQue$\ddagger$ & vector & 17.0 (25.6) & 16.9 & 45.0\% & 99.1\% \\
+MuSiQue$\ddagger$ & base & 21.6 (30.0) & 21.0 & 47.0\% & 97.2\% \\
+MuSiQue$\ddagger$ & full & 21.0 (24.7) & 20.0 & 47.4\% & 95.3\% \\
+\bottomrule
+\end{tabular}

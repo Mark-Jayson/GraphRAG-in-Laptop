@@ -1,0 +1,18 @@
+{
+  "benchmark": "hotpotqa",
+  "tag": "ehrag",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": true,
+  "compression_enabled": false,
+  "corpus_size": 66581,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "4cac37d",
+  "num_queries": 500,
+  "wall_time_s": 13305.1,
+  "run_date": "2026-07-20",
+  "em_f1": {
+    "exact_match": 35.2,
+    "f1": 44.538813963813965
+  },
+  "source_jsonl": "results/queries/hotpotqa_ehrag_llama-3.1-8b.jsonl"
+}

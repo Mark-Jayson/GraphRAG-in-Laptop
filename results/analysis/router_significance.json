@@ -1,0 +1,637 @@
+{
+  "HotpotQA": {
+    "always-graph": {
+      "em": 36.0,
+      "delta_em": 0.0,
+      "ci95": [
+        -4.0,
+        4.2
+      ],
+      "policy_only": 55,
+      "dense_only": 55,
+      "p_raw": 1.0,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -6.4,
+            6.4
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -6.2,
+            6.2
+          ]
+        }
+      }
+    },
+    "random": {
+      "em": 34.0,
+      "delta_em": -2.0,
+      "ci95": [
+        -4.8,
+        0.8
+      ],
+      "policy_only": 20,
+      "dense_only": 30,
+      "p_raw": 0.20263875106454066,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -6.2,
+            2.2
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -6.2,
+            2.2
+          ]
+        }
+      }
+    },
+    "heuristic": {
+      "em": 37.4,
+      "delta_em": 1.4,
+      "ci95": [
+        -2.0,
+        4.8
+      ],
+      "policy_only": 43,
+      "dense_only": 36,
+      "p_raw": 0.49989687686032663,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -4.0,
+            6.8
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -3.8,
+            6.6
+          ]
+        }
+      }
+    },
+    "cascade (dense->graph)": {
+      "em": 39.8,
+      "delta_em": 3.8,
+      "ci95": [
+        2.2,
+        5.6
+      ],
+      "policy_only": 19,
+      "dense_only": 0,
+      "p_raw": 3.814697265625e-06,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 7.62939453125e-05,
+          "holm": 5.340576171875e-05,
+          "ci_bonf": [
+            1.4,
+            6.6
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 5.7220458984375e-05,
+          "holm": 4.57763671875e-05,
+          "ci_bonf": [
+            1.6,
+            6.6
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 2.288818359375e-05,
+          "holm": 1.1444091796875e-05,
+          "ci_bonf": [
+            1.8,
+            6.2
+          ]
+        }
+      }
+    },
+    "cascade (graph->dense)": {
+      "em": 41.0,
+      "delta_em": 5.0,
+      "ci95": [
+        1.4,
+        8.6
+      ],
+      "policy_only": 55,
+      "dense_only": 30,
+      "p_raw": 0.008836205876094518,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.17672411752189035,
+          "holm": 0.10603447051313422,
+          "ci_bonf": [
+            -0.4,
+            10.6
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.13254308814141777,
+          "holm": 0.08836205876094518,
+          "ci_bonf": [
+            -0.4,
+            10.4
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 0.05301723525656711,
+          "holm": 0.008836205876094518,
+          "ci_bonf": [
+            0.2,
+            9.8
+          ]
+        }
+      }
+    },
+    "answer-oracle*": {
+      "em": 47.0,
+      "delta_em": 11.0,
+      "ci95": [
+        8.4,
+        13.8
+      ],
+      "policy_only": 55,
+      "dense_only": 0,
+      "p_raw": 5.551115123125783e-17,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.1102230246251565e-15,
+          "holm": 1.0547118733938987e-15,
+          "ci_bonf": [
+            7.0,
+            15.4
+          ]
+        }
+      }
+    },
+    "type-oracle*": {
+      "em": 38.6,
+      "delta_em": 2.6,
+      "ci95": [
+        -1.0,
+        6.2
+      ],
+      "policy_only": 49,
+      "dense_only": 36,
+      "p_raw": 0.19276043534155876,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -3.0,
+            8.2
+          ]
+        }
+      }
+    }
+  },
+  "2Wiki": {
+    "always-graph": {
+      "em": 23.8,
+      "delta_em": 1.4,
+      "ci95": [
+        -2.8,
+        5.6
+      ],
+      "policy_only": 59,
+      "dense_only": 52,
+      "p_raw": 0.5692202278035747,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -5.0,
+            7.8
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -4.8,
+            7.6
+          ]
+        }
+      }
+    },
+    "random": {
+      "em": 23.8,
+      "delta_em": 1.4,
+      "ci95": [
+        -1.6,
+        4.4
+      ],
+      "policy_only": 34,
+      "dense_only": 27,
+      "p_raw": 0.4426260049464714,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -3.2,
+            6.2
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0,
+          "holm": 1.0,
+          "ci_bonf": [
+            -3.2,
+            6.0
+          ]
+        }
+      }
+    },
+    "heuristic": {
+      "em": 25.2,
+      "delta_em": 2.8,
+      "ci95": [
+        0.4,
+        5.2
+      ],
+      "policy_only": 25,
+      "dense_only": 11,
+      "p_raw": 0.028816719655878842,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.5763343931175768,
+          "holm": 0.2593504769029096,
+          "ci_bonf": [
+            -0.6,
+            6.4
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.43225079483818263,
+          "holm": 0.2017170375911519,
+          "ci_bonf": [
+            -0.6,
+            6.4
+          ]
+        }
+      }
+    },
+    "cascade (dense->graph)": {
+      "em": 30.0,
+      "delta_em": 7.6,
+      "ci95": [
+        5.4,
+        10.0
+      ],
+      "policy_only": 38,
+      "dense_only": 0,
+      "p_raw": 7.275957614183426e-12,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 1.4551915228366852e-10,
+          "holm": 1.2369127944111824e-10,
+          "ci_bonf": [
+            4.2,
+            11.4
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 1.0913936421275139e-10,
+          "holm": 1.0913936421275139e-10,
+          "ci_bonf": [
+            4.4,
+            11.2
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 4.3655745685100555e-11,
+          "holm": 4.3655745685100555e-11,
+          "ci_bonf": [
+            4.6,
+            10.8
+          ]
+        }
+      }
+    },
+    "cascade (graph->dense)": {
+      "em": 29.6,
+      "delta_em": 7.2,
+      "ci95": [
+        3.6,
+        10.8
+      ],
+      "policy_only": 59,
+      "dense_only": 23,
+      "p_raw": 8.715478657320522e-05,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.0017430957314641044,
+          "holm": 0.0011330122254516678,
+          "ci_bonf": [
+            1.8,
+            12.6
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.0013073217985980783,
+          "holm": 0.0009587026523052574,
+          "ci_bonf": [
+            2.0,
+            12.4
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 0.0005229287194392314,
+          "holm": 0.00017430957314641045,
+          "ci_bonf": [
+            2.6,
+            12.0
+          ]
+        }
+      }
+    },
+    "answer-oracle*": {
+      "em": 34.2,
+      "delta_em": 11.8,
+      "ci95": [
+        9.0,
+        14.6
+      ],
+      "policy_only": 59,
+      "dense_only": 0,
+      "p_raw": 3.469446951953614e-18,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 6.938893903907228e-17,
+          "holm": 6.938893903907228e-17,
+          "ci_bonf": [
+            7.6,
+            16.4
+          ]
+        }
+      }
+    },
+    "type-oracle*": {
+      "em": 26.2,
+      "delta_em": 3.8,
+      "ci95": [
+        0.6,
+        7.0
+      ],
+      "policy_only": 44,
+      "dense_only": 25,
+      "p_raw": 0.029493493531317288,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.5898698706263458,
+          "holm": 0.2593504769029096,
+          "ci_bonf": [
+            -1.2,
+            9.0
+          ]
+        }
+      }
+    }
+  },
+  "MuSiQue": {
+    "always-graph": {
+      "em": 17.0,
+      "delta_em": 4.2,
+      "ci95": [
+        0.8,
+        7.6
+      ],
+      "policy_only": 50,
+      "dense_only": 29,
+      "p_raw": 0.023819792858001267,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.4763958571600253,
+          "holm": 0.23819792858001265,
+          "ci_bonf": [
+            -1.0,
+            9.6
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.357296892870019,
+          "holm": 0.19055834286401013,
+          "ci_bonf": [
+            -0.8,
+            9.4
+          ]
+        }
+      }
+    },
+    "random": {
+      "em": 15.8,
+      "delta_em": 3.0,
+      "ci95": [
+        0.4,
+        5.6
+      ],
+      "policy_only": 30,
+      "dense_only": 15,
+      "p_raw": 0.035697803555194696,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.7139560711038939,
+          "holm": 0.2593504769029096,
+          "ci_bonf": [
+            -0.8,
+            7.2
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.5354670533279204,
+          "holm": 0.21418682133116818,
+          "ci_bonf": [
+            -0.8,
+            7.0
+          ]
+        }
+      }
+    },
+    "heuristic": {
+      "em": 17.0,
+      "delta_em": 4.2,
+      "ci95": [
+        0.8,
+        7.6
+      ],
+      "policy_only": 48,
+      "dense_only": 27,
+      "p_raw": 0.020298406990107445,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 0.4059681398021489,
+          "holm": 0.2232824768911819,
+          "ci_bonf": [
+            -0.8,
+            9.4
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 0.3044761048516117,
+          "holm": 0.182685662910967,
+          "ci_bonf": [
+            -0.67,
+            9.4
+          ]
+        }
+      }
+    },
+    "cascade (dense->graph)": {
+      "em": 18.0,
+      "delta_em": 5.2,
+      "ci95": [
+        3.4,
+        7.2
+      ],
+      "policy_only": 26,
+      "dense_only": 0,
+      "p_raw": 2.9802322387695312e-08,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 5.960464477539062e-07,
+          "holm": 4.76837158203125e-07,
+          "ci_bonf": [
+            2.4,
+            8.4
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 4.470348358154297e-07,
+          "holm": 4.172325134277344e-07,
+          "ci_bonf": [
+            2.6,
+            8.2
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 1.7881393432617188e-07,
+          "holm": 1.4901161193847656e-07,
+          "ci_bonf": [
+            2.8,
+            8.0
+          ]
+        }
+      }
+    },
+    "cascade (graph->dense)": {
+      "em": 20.8,
+      "delta_em": 8.0,
+      "ci95": [
+        5.0,
+        11.0
+      ],
+      "policy_only": 50,
+      "dense_only": 10,
+      "p_raw": 1.6163814566157175e-07,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 3.232762913231435e-06,
+          "holm": 2.4245721849235763e-06,
+          "ci_bonf": [
+            3.6,
+            12.6
+          ]
+        },
+        "m_deploy": {
+          "m": 15,
+          "bonferroni": 2.4245721849235763e-06,
+          "holm": 2.1012958936004328e-06,
+          "ci_bonf": [
+            3.8,
+            12.6
+          ]
+        },
+        "m_cascade": {
+          "m": 6,
+          "bonferroni": 9.698288739694305e-07,
+          "holm": 6.46552582646287e-07,
+          "ci_bonf": [
+            4.2,
+            12.0
+          ]
+        }
+      }
+    },
+    "answer-oracle*": {
+      "em": 22.8,
+      "delta_em": 10.0,
+      "ci95": [
+        7.4,
+        12.6
+      ],
+      "policy_only": 50,
+      "dense_only": 0,
+      "p_raw": 1.7763568394002505e-15,
+      "families": {
+        "m_all": {
+          "m": 20,
+          "bonferroni": 3.552713678800501e-14,
+          "holm": 3.197442310920451e-14,
+          "ci_bonf": [
+            6.2,
+            14.2
+          ]
+        }
+      }
+    }
+  }
+}

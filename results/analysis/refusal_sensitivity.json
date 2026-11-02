@@ -1,0 +1,50 @@
+{
+  "HotpotQA": {
+    "n": 500,
+    "dense_em": 36.0,
+    "graph_em": 36.0,
+    "exact": {
+      "dense_refusal_pct": 19.6,
+      "escalations": 98,
+      "cascade_em": 39.8
+    },
+    "wide": {
+      "dense_refusal_pct": 19.6,
+      "escalations": 98,
+      "cascade_em": 39.8
+    },
+    "cascade_em_delta_wide_minus_exact": 0.0
+  },
+  "2Wiki": {
+    "n": 500,
+    "dense_em": 22.4,
+    "graph_em": 23.8,
+    "exact": {
+      "dense_refusal_pct": 48.6,
+      "escalations": 243,
+      "cascade_em": 30.0
+    },
+    "wide": {
+      "dense_refusal_pct": 48.6,
+      "escalations": 243,
+      "cascade_em": 30.0
+    },
+    "cascade_em_delta_wide_minus_exact": 0.0
+  },
+  "MuSiQue": {
+    "n": 500,
+    "dense_em": 12.8,
+    "graph_em": 17.0,
+    "exact": {
+      "dense_refusal_pct": 45.0,
+      "escalations": 225,
+      "cascade_em": 18.0
+    },
+    "wide": {
+      "dense_refusal_pct": 45.6,
+      "escalations": 228,
+      "cascade_em": 18.0
+    },
+    "cascade_em_delta_wide_minus_exact": 0.0
+  }
+}

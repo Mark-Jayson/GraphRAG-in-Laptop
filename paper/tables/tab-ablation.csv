@@ -1,0 +1,10 @@
+Tag,hyperedges,compression,EM,F1,conversion,median latency
+`base`,no,no,36.0,44.63,50.9%,26.0 s
+`ehrag`,yes,no,35.2,44.54,51.3%,26.3 s
+`compression`,no,yes,35.8,44.27,52.3%,24.4 s
+`full`,yes,yes,35.8,45.23,52.5%,24.9 s
+
+Generator,gold in context,conversion,EM,F1,refusal,median latency
+Llama-3.2-1B-Instruct-4bit,63.9%,11.8%,8.6,12.27,60.4%,5.4 s
+Llama-3.2-3B-Instruct-4bit,63.9%,42.8%,30.8,40.65,23.4%,12.2 s
+Llama-3.1-8B-Instruct-4bit,63.9%,50.9%,36.0,44.63,26.4%,26.0 s

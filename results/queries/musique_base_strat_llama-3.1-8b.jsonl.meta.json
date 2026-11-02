@@ -1,0 +1,13 @@
+{
+  "benchmark": "musique",
+  "tag": "base",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 21100,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "d1c94cb",
+  "num_queries": 500,
+  "wall_time_s": 15444.8,
+  "run_date": "2026-08-14"
+}

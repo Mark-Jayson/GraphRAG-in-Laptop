@@ -1,0 +1,16 @@
+{
+  "benchmark": "musique",
+  "tag": "vector",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 21100,
+  "ner_model": null,
+  "retriever": "dense_passage_bruteforce_cosine",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 20,
+  "git_hash": "a5d23b3",
+  "num_queries": 500,
+  "wall_time_s": 8863.2,
+  "run_date": "2026-08-13"
+}

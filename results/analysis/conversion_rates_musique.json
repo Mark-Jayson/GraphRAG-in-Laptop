@@ -1,0 +1,110 @@
+{
+  "musique_base_llama-3.1-8b": {
+    "benchmark": "musique",
+    "tag": "base",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "n": 500,
+    "em_overall": 17.0,
+    "ctx_chars_median": 11496,
+    "ctx_tokens_est": 2874,
+    "n_passages_median": 20,
+    "refusal_pct": 47.0,
+    "extractive": {
+      "n_subset": 500,
+      "gold_in_ctx_pct": 55.0,
+      "em_given_gold": 30.5,
+      "f1_given_gold": 40.2,
+      "em_given_no_gold": 0.4,
+      "n_gold_present": 275
+    },
+    "strict": {
+      "n_subset": 497,
+      "gold_in_ctx_pct": 54.9,
+      "em_given_gold": 30.0,
+      "f1_given_gold": 39.8,
+      "em_given_no_gold": 0.4,
+      "n_gold_present": 273
+    }
+  },
+  "musique_base_strat_llama-3.1-8b": {
+    "benchmark": "musique",
+    "tag": "base",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "n": 500,
+    "em_overall": 11.6,
+    "ctx_chars_median": 11934,
+    "ctx_tokens_est": 2983,
+    "n_passages_median": 20,
+    "refusal_pct": 57.6,
+    "extractive": {
+      "n_subset": 500,
+      "gold_in_ctx_pct": 46.8,
+      "em_given_gold": 24.8,
+      "f1_given_gold": 31.7,
+      "em_given_no_gold": 0.0,
+      "n_gold_present": 234
+    },
+    "strict": {
+      "n_subset": 487,
+      "gold_in_ctx_pct": 45.4,
+      "em_given_gold": 26.2,
+      "f1_given_gold": 33.2,
+      "em_given_no_gold": 0.0,
+      "n_gold_present": 221
+    }
+  },
+  "musique_full_llama-3.1-8b": {
+    "benchmark": "musique",
+    "tag": "full",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "n": 500,
+    "em_overall": 17.0,
+    "ctx_chars_median": 10898,
+    "ctx_tokens_est": 2724,
+    "n_passages_median": 20,
+    "refusal_pct": 47.4,
+    "extractive": {
+      "n_subset": 500,
+      "gold_in_ctx_pct": 53.6,
+      "em_given_gold": 31.3,
+      "f1_given_gold": 41.4,
+      "em_given_no_gold": 0.4,
+      "n_gold_present": 268
+    },
+    "strict": {
+      "n_subset": 497,
+      "gold_in_ctx_pct": 53.5,
+      "em_given_gold": 30.8,
+      "f1_given_gold": 40.9,
+      "em_given_no_gold": 0.4,
+      "n_gold_present": 266
+    }
+  },
+  "musique_vector_llama-3.1-8b": {
+    "benchmark": "musique",
+    "tag": "vector",
+    "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "n": 500,
+    "em_overall": 12.8,
+    "ctx_chars_median": 9110,
+    "ctx_tokens_est": 2277,
+    "n_passages_median": 20,
+    "refusal_pct": 45.0,
+    "extractive": {
+      "n_subset": 500,
+      "gold_in_ctx_pct": 47.0,
+      "em_given_gold": 26.4,
+      "f1_given_gold": 34.6,
+      "em_given_no_gold": 0.8,
+      "n_gold_present": 235
+    },
+    "strict": {
+      "n_subset": 497,
+      "gold_in_ctx_pct": 46.7,
+      "em_given_gold": 25.9,
+      "f1_given_gold": 34.1,
+      "em_given_no_gold": 0.8,
+      "n_gold_present": 232
+    }
+  }
+}

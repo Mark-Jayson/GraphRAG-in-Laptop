@@ -1,0 +1,13 @@
+{
+  "benchmark": "2wikimultihop",
+  "tag": "base",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 54957,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "d1c94cb",
+  "num_queries": 500,
+  "wall_time_s": 16738.5,
+  "run_date": "2026-08-14"
+}

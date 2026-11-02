@@ -1,0 +1,16 @@
+date,benchmark,tag,model,ner_model,corpus_size,use_hyperedges,compression_enabled,num_queries,exact_match,f1,lat_median_s,lat_p95_s,lat_mean_s,wall_time_s,wall_clock_suspect,refusal_pct,git_hash,source
+2026-08-04,2wikimultihop,base,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,54957,False,False,500,23.8,28.51,34.57,58.59,39.55,19800.6,False,46.0,4cac37d,2wikimultihop_base_llama-3.1-8b.json
+2026-08-14,2wikimultihop,base,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,54957,False,False,500,23.4,27.89,32.27,51.19,33.47,16738.5,False,46.0,d1c94cb,2wikimultihop_base_rep2_llama-3.1-8b.json
+2026-08-04,2wikimultihop,full,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,54957,True,True,500,24.4,29.28,25.32,28.09,24.75,12379.3,False,45.6,4cac37d,2wikimultihop_full_llama-3.1-8b.json
+2026-08-12,2wikimultihop,vector,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,,54957,False,False,500,22.4,26.97,13.06,24.92,14.37,7186.0,False,48.6,ed88706,2wikimultihop_vector_llama-3.1-8b.json
+2026-07-20,hotpotqa,base,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,66581,False,False,500,36.0,44.63,26.04,38.95,69.48,34745.7,True,26.4,4cac37d,hotpotqa_base_llama-3.1-8b.json
+2026-08-13,hotpotqa,base,mlx-community/Llama-3.2-1B-Instruct-4bit,en_core_web_trf,66581,False,False,500,8.6,12.27,5.38,6.8,5.57,2787.0,False,60.4,a5d23b3,hotpotqa_base_llama-3.2-1b.json
+2026-08-13,hotpotqa,base,mlx-community/Llama-3.2-3B-Instruct-4bit,en_core_web_trf,66581,False,False,500,30.8,40.65,12.22,15.65,12.43,6219.2,False,23.4,a5d23b3,hotpotqa_base_llama-3.2-3b.json
+2026-07-20,hotpotqa,compression,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,66581,False,True,500,35.8,44.27,24.38,27.96,24.26,12137.6,False,26.2,4cac37d,hotpotqa_compression_llama-3.1-8b.json
+2026-07-20,hotpotqa,ehrag,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,66581,True,False,500,35.2,44.54,26.3,33.81,26.6,13305.1,False,25.4,4cac37d,hotpotqa_ehrag_llama-3.1-8b.json
+2026-07-25,hotpotqa,full,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,66581,True,True,500,35.8,45.23,24.93,29.02,24.84,12428.1,False,26.0,4cac37d,hotpotqa_full_llama-3.1-8b.json
+2026-08-12,hotpotqa,vector,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,,66581,False,False,500,36.0,46.44,18.3,25.97,18.8,9403.4,False,19.6,ed88706,hotpotqa_vector_llama-3.1-8b.json
+2026-08-05,musique,base,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,21100,False,False,500,17.0,23.64,21.58,30.04,22.13,11070.9,False,47.0,4cac37d,musique_base_llama-3.1-8b.json
+2026-08-14,musique,base,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,21100,False,False,500,11.6,15.76,23.95,69.73,30.88,15444.8,False,57.6,d1c94cb,musique_base_strat_llama-3.1-8b.json
+2026-08-05,musique,full,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,en_core_web_trf,21100,True,True,500,17.0,23.71,21.0,24.72,20.73,10368.8,False,47.4,4cac37d,musique_full_llama-3.1-8b.json
+2026-08-13,musique,vector,mlx-community/Meta-Llama-3.1-8B-Instruct-4bit,,21100,False,False,500,12.8,20.64,17.04,25.6,17.72,8863.2,False,45.0,a5d23b3,musique_vector_llama-3.1-8b.json

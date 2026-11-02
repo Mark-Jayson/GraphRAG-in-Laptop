@@ -1,0 +1,12 @@
+Benchmark,corpus,`vector` EM / F1,`base` EM / F1,`full` EM / F1
+HotpotQA,"66,581",36.0 / 46.44,36.0 / 44.63,35.8 / 45.23
+2WikiMultiHopQA,"54,957",22.4 / 26.97,23.8 / 28.51,24.4 / 29.28
+MuSiQue‡,"21,100",12.8 / 20.64,17.0 / 23.64,17.0 / 23.71
+
+Benchmark,comparison,n,ΔEM,95% CI,McNemar p,ΔF1
+HotpotQA,graph − dense,500,+0.0,"[-4.0, +4.2]",1.000,-1.81
+HotpotQA,full − base,500,-0.2,"[-2.8, +2.4]",1.000,+0.60
+2WikiMultiHopQA,graph − dense,500,+1.4,"[-2.8, +5.6]",0.569,+1.54
+2WikiMultiHopQA,full − base,500,+0.6,"[-2.0, +3.2]",0.755,+0.77
+MuSiQue‡,graph − dense,500,+4.2,"[+0.8, +7.6]",0.024,+3.00
+MuSiQue‡,full − base,500,+0.0,"[-2.0, +2.0]",1.000,+0.07

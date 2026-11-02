@@ -1,0 +1,74 @@
+# Per-benchmark override of config.yaml: separate index paths so indexing
+# 2WikiMultihopQA never touches (or DELETEs) the HotpotQA graph.duckdb/models/.
+# Everything else (retrieval fixes, compression budget, LLM) is identical to
+# config.yaml — keep the two in sync if those get tuned further.
+hardware:
+  chip: "M1"
+  ram_gb: 16
+  max_corpus_tokens: 70000
+
+paths:
+  data_dir: "./data"
+  models_dir: "./models_2wikimultihop"
+  results_dir: "./results"
+  db_path: "./data/graph_2wikimultihop.duckdb"
+
+nlp:
+  spacy_model: "en_core_web_trf"
+  max_entities_per_passage: 100
+
+embeddings:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  dimension: 384
+  batch_size: 32
+
+ehrag:
+  use_hyperedges: true
+  birch_threshold: 0.5
+  birch_branching_factor: 50
+  semantic_top_k: 5
+  decay_factor: 0.95
+  expand_seed_entities: false
+  expansion_max_cluster: 20
+  expansion_weight: "inverse_size"
+  expansion_exclude_labels: ["DATE", "CARDINAL", "ORDINAL", "QUANTITY", "TIME", "PERCENT", "MONEY"]
+
+vector_index:
+  index_type: "IVF_PQ"
+  nlist: 100
+  m: 16
+  nbits: 8
+  nprobe: 10
+
+ppr:
+  alpha: 0.15
+  max_iterations: 50
+  convergence_threshold: 1.0e-6
+  top_k_passages: 20
+  seed_mass_fraction: 0.15
+
+compression:
+  enabled: true
+  method: "extractive_evidence"
+  max_tokens: 3072
+  preserve_spans:
+    - named_entities
+    - numerical_values
+    - noun_phrases
+
+llm:
+  model: "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit"
+  max_tokens: 512
+  temperature: 0.1
+  top_p: 0.9
+  repetition_penalty: 1.1
+
+evaluation:
+  benchmarks:
+    - "2wikimultihop"
+  max_eval_samples: 500
+  ragas_metrics:
+    - "faithfulness"
+    - "answer_relevancy"
+    - "context_precision"
+    - "context_recall"

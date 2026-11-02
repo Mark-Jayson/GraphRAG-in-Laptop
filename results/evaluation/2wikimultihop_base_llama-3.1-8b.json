@@ -1,0 +1,18 @@
+{
+  "benchmark": "2wikimultihop",
+  "tag": "base",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 54957,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "4cac37d",
+  "num_queries": 500,
+  "wall_time_s": 19800.6,
+  "run_date": "2026-08-04",
+  "em_f1": {
+    "exact_match": 23.8,
+    "f1": 28.511113331113332
+  },
+  "source_jsonl": "results/queries/2wikimultihop_base_llama-3.1-8b.jsonl"
+}

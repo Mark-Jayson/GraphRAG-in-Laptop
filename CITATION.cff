@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "GraphRAG on a Laptop: code and results"
+type: software
+authors:
+  - family-names: Agao
+    given-names: Mark Jayson
+    affiliation: DysrupIT
+license: MIT
+repository-code: "https://github.com/Mark-Jayson/GraphRAG-in-Laptop"
+keywords:
+  - retrieval-augmented generation
+  - multi-hop question answering
+  - on-device inference
+  - graph retrieval
+preferred-citation:
+  type: conference-paper
+  title: "GraphRAG on a Laptop: Evaluating Fully Local Multi-Hop Retrieval on Consumer Hardware"
+  authors:
+    - family-names: Agao
+      given-names: Mark Jayson
+      affiliation: DysrupIT
+  conference:
+    name: "WCTP 2026"
+  year: 2026

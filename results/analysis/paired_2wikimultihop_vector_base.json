@@ -1,0 +1,52 @@
+{
+  "a": "results/queries/2wikimultihop_vector_llama-3.1-8b.jsonl",
+  "b": "results/queries/2wikimultihop_base_llama-3.1-8b.jsonl",
+  "label_a": "vector",
+  "label_b": "base",
+  "n": 500,
+  "em": {
+    "a": 22.4,
+    "b": 23.8,
+    "diff": 1.4,
+    "ci95": [
+      -2.8,
+      5.6
+    ]
+  },
+  "f1": {
+    "a": 26.97,
+    "b": 28.51,
+    "diff": 1.54,
+    "ci95": [
+      -2.72,
+      5.76
+    ]
+  },
+  "em_contingency": {
+    "both": 60,
+    "a_only": 52,
+    "b_only": 59,
+    "neither": 329,
+    "discordant": 111,
+    "discordant_rate": 0.222
+  },
+  "mcnemar_exact_p": 0.56922,
+  "bootstrap": {
+    "resamples": 100000,
+    "seed": 20260814
+  },
+  "power": {
+    "100": {
+      "se_paired_em_diff": 4.71,
+      "mde_80pct": 13.2
+    },
+    "300": {
+      "se_paired_em_diff": 2.72,
+      "mde_80pct": 7.6
+    },
+    "500": {
+      "se_paired_em_diff": 2.11,
+      "mde_80pct": 5.9
+    }
+  }
+}

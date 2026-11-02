@@ -1,0 +1,52 @@
+{
+  "a": "results/queries/hotpotqa_base_llama-3.1-8b.jsonl",
+  "b": "results/queries/hotpotqa_full_llama-3.1-8b.jsonl",
+  "label_a": "base",
+  "label_b": "full",
+  "n": 500,
+  "em": {
+    "a": 36.0,
+    "b": 35.8,
+    "diff": -0.2,
+    "ci95": [
+      -2.8,
+      2.4
+    ]
+  },
+  "f1": {
+    "a": 44.63,
+    "b": 45.23,
+    "diff": 0.6,
+    "ci95": [
+      -1.8,
+      3.01
+    ]
+  },
+  "em_contingency": {
+    "both": 159,
+    "a_only": 21,
+    "b_only": 20,
+    "neither": 300,
+    "discordant": 41,
+    "discordant_rate": 0.082
+  },
+  "mcnemar_exact_p": 1.0,
+  "bootstrap": {
+    "resamples": 100000,
+    "seed": 20260814
+  },
+  "power": {
+    "100": {
+      "se_paired_em_diff": 2.86,
+      "mde_80pct": 8.0
+    },
+    "300": {
+      "se_paired_em_diff": 1.65,
+      "mde_80pct": 4.6
+    },
+    "500": {
+      "se_paired_em_diff": 1.28,
+      "mde_80pct": 3.6
+    }
+  }
+}

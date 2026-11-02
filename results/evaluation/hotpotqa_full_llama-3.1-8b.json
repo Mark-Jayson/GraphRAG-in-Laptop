@@ -1,0 +1,18 @@
+{
+  "benchmark": "hotpotqa",
+  "tag": "full",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": true,
+  "compression_enabled": true,
+  "corpus_size": 66581,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "4cac37d",
+  "num_queries": 500,
+  "wall_time_s": 12428.1,
+  "run_date": "2026-07-25",
+  "em_f1": {
+    "exact_match": 35.8,
+    "f1": 45.23093517593518
+  },
+  "source_jsonl": "results/queries/hotpotqa_full_llama-3.1-8b.jsonl"
+}

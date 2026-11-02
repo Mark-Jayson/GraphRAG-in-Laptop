@@ -1,0 +1,26 @@
+\begin{tabular}{lrcrrrr}
+\toprule
+Policy & $\Delta$EM & 95\% CI & b/c & p raw & Holm$_{20}$ & Holm$_{6}$ \\
+\midrule
+\multicolumn{7}{l}{\emph{HotpotQA}} \\
+~~always-graph & +0.0 & {[}$-$4.0, +4.2{]} & 55/55 & 1.000 & 1.000 & -- \\
+~~heuristic & +1.4 & {[}$-$2.0, +4.8{]} & 43/36 & 0.500 & 1.000 & -- \\
+~~cascade (dense$\rightarrow$graph) & +3.8 & {[}+2.2, +5.6{]} & 19/0 & 3.8e$-$6 & 5.3e$-$5 & 1.1e$-$5 \\
+~~cascade (graph$\rightarrow$dense) & +5.0 & {[}+1.4, +8.6{]} & 55/30 & 0.009 & 0.106 & 0.009 \\
+~~answer-oracle* & +11.0 & {[}+8.4, +13.8{]} & 55/0 & 5.6e$-$17 & 1.1e$-$15 & -- \\
+~~type-oracle* & +2.6 & {[}$-$1.0, +6.2{]} & 49/36 & 0.193 & 1.000 & -- \\
+\multicolumn{7}{l}{\emph{2Wiki}} \\
+~~always-graph & +1.4 & {[}$-$2.8, +5.6{]} & 59/52 & 0.569 & 1.000 & -- \\
+~~heuristic & +2.8 & {[}+0.4, +5.2{]} & 25/11 & 0.029 & 0.259 & -- \\
+~~cascade (dense$\rightarrow$graph) & +7.6 & {[}+5.4, +10.0{]} & 38/0 & 7.3e$-$12 & 1.2e$-$10 & 4.4e$-$11 \\
+~~cascade (graph$\rightarrow$dense) & +7.2 & {[}+3.6, +10.8{]} & 59/23 & 8.7e$-$5 & 0.001 & 1.7e$-$4 \\
+~~answer-oracle* & +11.8 & {[}+9.0, +14.6{]} & 59/0 & 3.5e$-$18 & 6.9e$-$17 & -- \\
+~~type-oracle* & +3.8 & {[}+0.6, +7.0{]} & 44/25 & 0.029 & 0.259 & -- \\
+\multicolumn{7}{l}{\emph{MuSiQue}} \\
+~~always-graph & +4.2 & {[}+0.8, +7.6{]} & 50/29 & 0.024 & 0.238 & -- \\
+~~heuristic & +4.2 & {[}+0.8, +7.6{]} & 48/27 & 0.020 & 0.223 & -- \\
+~~cascade (dense$\rightarrow$graph) & +5.2 & {[}+3.4, +7.2{]} & 26/0 & 3.0e$-$8 & 4.8e$-$7 & 1.5e$-$7 \\
+~~cascade (graph$\rightarrow$dense) & +8.0 & {[}+5.0, +11.0{]} & 50/10 & 1.6e$-$7 & 2.4e$-$6 & 6.5e$-$7 \\
+~~answer-oracle* & +10.0 & {[}+7.4, +12.6{]} & 50/0 & 1.8e$-$15 & 3.2e$-$14 & -- \\
+\bottomrule
+\end{tabular}

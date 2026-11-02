@@ -1,0 +1,16 @@
+{
+  "trigraph_time": 5081.79838180542,
+  "trigraph_stats": {
+    "num_passages": 66581,
+    "num_sentences": 271027,
+    "num_entities": 352255,
+    "num_es_edges": 962015,
+    "num_sp_edges": 271027
+  },
+  "storage_time": 95.82063698768616,
+  "embedding_time": 389.8230838775635,
+  "index_time": 9.468430042266846,
+  "hyperedge_time": 282.905433177948,
+  "num_hyperedges": 60747,
+  "total_time": 5859.902626037598
+}

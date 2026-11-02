@@ -1,0 +1,21 @@
+{
+  "benchmark": "hotpotqa",
+  "tag": "vector",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 66581,
+  "ner_model": null,
+  "retriever": "dense_passage_bruteforce_cosine",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 20,
+  "git_hash": "ed88706",
+  "num_queries": 500,
+  "wall_time_s": 9403.4,
+  "run_date": "2026-08-12",
+  "em_f1": {
+    "exact_match": 36.0,
+    "f1": 46.44189088689089
+  },
+  "source_jsonl": "results/queries/hotpotqa_vector_llama-3.1-8b.jsonl"
+}

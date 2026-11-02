@@ -1,0 +1,44 @@
+{
+  "hotpotqa_base": {
+    "n": 424,
+    "correct": 138,
+    "refuse_gold": 30,
+    "wrong_gold": 103,
+    "no_gold": 153
+  },
+  "hotpotqa_full": {
+    "n": 424,
+    "correct": 137,
+    "refuse_gold": 21,
+    "wrong_gold": 103,
+    "no_gold": 163
+  },
+  "2wikimultihop_base": {
+    "n": 278,
+    "correct": 31,
+    "refuse_gold": 62,
+    "wrong_gold": 74,
+    "no_gold": 111
+  },
+  "2wikimultihop_full": {
+    "n": 278,
+    "correct": 25,
+    "refuse_gold": 65,
+    "wrong_gold": 67,
+    "no_gold": 121
+  },
+  "musique_base": {
+    "n": 497,
+    "correct": 82,
+    "refuse_gold": 73,
+    "wrong_gold": 118,
+    "no_gold": 224
+  },
+  "musique_full": {
+    "n": 497,
+    "correct": 82,
+    "refuse_gold": 72,
+    "wrong_gold": 112,
+    "no_gold": 231
+  }
+}

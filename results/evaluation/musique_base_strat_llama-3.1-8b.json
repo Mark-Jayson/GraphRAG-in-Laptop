@@ -1,0 +1,18 @@
+{
+  "benchmark": "musique",
+  "tag": "base",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 21100,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "d1c94cb",
+  "num_queries": 500,
+  "wall_time_s": 15444.8,
+  "run_date": "2026-08-14",
+  "em_f1": {
+    "exact_match": 11.6,
+    "f1": 15.758726763432646
+  },
+  "source_jsonl": "results/queries/musique_base_strat_llama-3.1-8b.jsonl"
+}

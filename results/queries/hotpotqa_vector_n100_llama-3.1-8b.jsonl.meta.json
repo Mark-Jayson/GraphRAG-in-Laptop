@@ -1,0 +1,16 @@
+{
+  "benchmark": "hotpotqa",
+  "tag": "vector",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 66581,
+  "ner_model": null,
+  "retriever": "dense_passage_bruteforce_cosine",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 20,
+  "git_hash": "3cc74d4",
+  "num_queries": 100,
+  "wall_time_s": 4980.9,
+  "run_date": "2026-08-14"
+}

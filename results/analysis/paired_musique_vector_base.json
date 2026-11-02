@@ -1,0 +1,52 @@
+{
+  "a": "results/queries/musique_vector_llama-3.1-8b.jsonl",
+  "b": "results/queries/musique_base_llama-3.1-8b.jsonl",
+  "label_a": "vector",
+  "label_b": "base",
+  "n": 500,
+  "em": {
+    "a": 12.8,
+    "b": 17.0,
+    "diff": 4.2,
+    "ci95": [
+      0.8,
+      7.6
+    ]
+  },
+  "f1": {
+    "a": 20.64,
+    "b": 23.64,
+    "diff": 3.0,
+    "ci95": [
+      -0.55,
+      6.61
+    ]
+  },
+  "em_contingency": {
+    "both": 35,
+    "a_only": 29,
+    "b_only": 50,
+    "neither": 386,
+    "discordant": 79,
+    "discordant_rate": 0.158
+  },
+  "mcnemar_exact_p": 0.02382,
+  "bootstrap": {
+    "resamples": 100000,
+    "seed": 20260814
+  },
+  "power": {
+    "100": {
+      "se_paired_em_diff": 3.97,
+      "mde_80pct": 11.1
+    },
+    "300": {
+      "se_paired_em_diff": 2.29,
+      "mde_80pct": 6.4
+    },
+    "500": {
+      "se_paired_em_diff": 1.78,
+      "mde_80pct": 5.0
+    }
+  }
+}

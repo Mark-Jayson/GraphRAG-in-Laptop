@@ -1,0 +1,28 @@
+{
+  "idle_mw": 136.8,
+  "arms": {
+    "base": {
+      "n_queries": 100,
+      "batch_seconds": 7264.1,
+      "samples": 5400,
+      "window_coverage_pct": 74.3,
+      "mean_mw": 3371.0,
+      "net_mw": 3234.1,
+      "wh_per_query": 0.06526,
+      "wh_per_100_queries": 6.526,
+      "s_per_query_during_measurement": 72.6
+    },
+    "vector": {
+      "n_queries": 100,
+      "batch_seconds": 4980.2,
+      "samples": 5400,
+      "window_coverage_pct": 108.4,
+      "mean_mw": 3188.8,
+      "net_mw": 3051.9,
+      "wh_per_query": 0.04222,
+      "wh_per_100_queries": 4.222,
+      "s_per_query_during_measurement": 49.8
+    }
+  },
+  "method": "Combined Power (CPU+GPU+ANE), net of idle; duration from the run's in-loop timers, not the sample count"
+}

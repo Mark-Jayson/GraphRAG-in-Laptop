@@ -1,0 +1,16 @@
+{
+  "by_hop": {
+    "2": {
+      "n": 500,
+      "dense_em": 12.8,
+      "graph_em": 17.0,
+      "delta_em": 4.2,
+      "graph_only": 50,
+      "dense_only": 29,
+      "mcnemar_p": 0.0238
+    }
+  },
+  "monotone_increasing": null,
+  "degenerate_single_bucket": true,
+  "note": "sample is the sequential head of a hop-sorted file; all questions share one hop count"
+}

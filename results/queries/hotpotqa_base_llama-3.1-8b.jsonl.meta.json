@@ -1,0 +1,13 @@
+{
+  "benchmark": "hotpotqa",
+  "tag": "base",
+  "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+  "use_hyperedges": false,
+  "compression_enabled": false,
+  "corpus_size": 66581,
+  "ner_model": "en_core_web_trf",
+  "git_hash": "4cac37d",
+  "num_queries": 500,
+  "wall_time_s": 34745.7,
+  "run_date": "2026-07-20"
+}

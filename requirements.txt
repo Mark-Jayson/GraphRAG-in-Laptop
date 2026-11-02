@@ -1,0 +1,39 @@
+# Direct dependencies, pinned to the versions the paper's runs used.
+# Python 3.13 on macOS / Apple Silicon (MLX requires Metal).
+# requirements.lock.txt is the full `pip freeze` of that environment.
+
+# NLP and graph construction (the two spaCy pipelines install from these wheels)
+spacy==3.8.14
+spacy-curated-transformers==0.3.1
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+en_core_web_trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl#sha256=272a31e9d8530d1e075351d30a462d7e80e31da23574f1b274e200f3fff35bf5
+
+# Embeddings and vector index
+sentence-transformers==5.6.0
+transformers==5.13.1
+torch==2.13.0
+faiss-cpu==1.14.3
+
+# Graph store
+duckdb==1.5.4
+pyarrow==25.0.0
+
+# Local LLM inference
+mlx==0.32.0
+mlx-lm==0.31.3
+
+# Data
+datasets==5.0.0
+huggingface_hub==1.23.0
+
+# Numerics and clustering (BIRCH hyperedges, sparse PPR, bootstrap)
+numpy==2.5.1
+scipy==1.18.0
+scikit-learn==1.9.0
+
+# Utilities, profiling, figures, tests
+PyYAML==6.0.3
+tqdm==4.68.4
+psutil==7.2.2
+matplotlib==3.11.2
+pytest==9.1.1
